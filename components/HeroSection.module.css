@@ -1,0 +1,58 @@
+.heroWrapper{
+  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1));
+  width: 100%;
+}
+
+.heroImage{
+  height: 600px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.heroText{
+  position: fixed;
+  top: 150px;
+  margin: 40px;
+  color: white;
+  font-size: 30px
+}
+
+.heroText span{
+  color: #FADD18;
+}
+
+.heroBtns{
+  position: fixed;
+  width: 80%;
+  top: 580px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+
+
+}
+
+.heroNavBtn {
+  border-top: 4px solid #f3e4e4;
+  display: inline-block;
+  margin-left: 8px;
+  padding: 10px;
+  width: 80px; 
+  height: 4px;
+  cursor: pointer;
+}
+
+.active{
+  border-top: 4px solid #FADD18;
+}
+
+.heroShopBtn{
+width: 10%;
+height: 42px;
+color: white;
+border: 1px solid white;
+display: flex;
+
+}

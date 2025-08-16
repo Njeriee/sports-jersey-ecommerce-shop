@@ -1,4 +1,4 @@
-import Carousel from "@/components/Carousel";
+import HeroSection from "@/components/HeroSection";
 
 export default function LandingPage() {
 
@@ -10,8 +10,8 @@ export default function LandingPage() {
         '/image 5.jpg'
     ]
   return (
-    <div>
-        <Carousel imageUrls = {carouselImages}/>
+    <div style={{margin:"72px"}}>
+        <HeroSection imageUrls = {carouselImages}/>
     </div>
   );
 }
