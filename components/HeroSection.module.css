@@ -1,10 +1,10 @@
 .heroWrapper{
-  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1));
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
   width: 100%;
 }
 
 .heroImage{
-  height: 600px;
+  height: 650px;
   width: 100%;
   position: relative;
   z-index: -1;
@@ -12,7 +12,7 @@
 
 .heroText{
   position: fixed;
-  top: 150px;
+  top: 250px;
   margin: 40px;
   color: white;
   font-size: 30px
@@ -25,7 +25,7 @@
 .heroBtns{
   position: fixed;
   width: 80%;
-  top: 580px;
+  top: 680px;
   color: white;
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,97 @@
+.navbarContainer {
+  width: 100%;
+  height: 88px;
+  display: flex;
+}
+
+.searchBar {
+  display: flex;
+  padding-left: 70px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(233, 229, 229);
+  padding-top: 16px;
+}
+
+.dropDown {
+  overflow: hidden;
+  /* margin-left: 12px; */
+}
+
+.dropDown button{
+  border: none;
+  outline: none;
+  background: none;
+  /* padding: 4px; */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropDownContent{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width : 160px;
+}
+
+.dropDownContent a{
+  display: block;
+  padding: 16px;
+}
+
+.dropDownContent a:hover{
+  background-color: #ddd;
+}
+
+.dropDown:hover .dropDownContent{
+  display: block;
+}
+
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.searchInput input {
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+
+.searchSubmit {
+  height: 42px;
+  display: flex;
+}
+
+.searchSubmit input{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: none; 
+  box-shadow: none; 
+}
+
+.navMenu{
+  display: inline-flex;
+  margin-top: 12px;
+  padding-left: 70px;
+  justify-content: space-between;
+  width: 66%;
+}
+
+.navMenu a{
+  padding-right: 16px;
+  /* margin-top: 12px; */
+}
+
+.navMenu .dropDown{
+  /* margin-top: 12px; */
+  padding-right: 16px;
+}
