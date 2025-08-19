@@ -20,7 +20,6 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
                 <h1>Your favorite customized <br />
                     <span>Club Jerseys.</span>
                 </h1>
-
             </div>
 
             <div className={styles.heroBtns}>
@@ -32,11 +31,51 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
                     ))}
                 </div>
                 <div className={styles.heroShopBtn}>
-                        <div style={{margin:"10px",width:"70%"}} >Shop now</div>
-                        <div style={{width:"30%",backgroundColor:"white"}} ></div>
+                    <div style={{ margin: "10px", width: "70%" }} >Shop now</div>
+                    <div style={{ width: "30%", backgroundColor: "white" }} ></div>
                 </div>
             </div>
+            <div className={styles.heroCards}>
+                <div className={styles.heroCard}>
+                    <div className={styles.cuboid}>
+                        <i>i</i>
+                    </div>
+                    <div className={styles.cardText}>
+                        <h3>Secure Shipping</h3>
+                        <p>on all oders</p>
+                    </div>
+                </div>
+                                <div className={styles.heroCard}>
+                    <div className={styles.cuboid}>
+                        <i>i</i>
+                    </div>
+                    <div className={styles.cardText}>
+                        <h3>Secure Shipping</h3>
+                        <p>on all oders</p>
+                    </div>
+                </div>
+                                <div className={styles.heroCard}>
+                    <div className={styles.cuboid}>
+                        <i>i</i>
+                    </div>
+                    <div className={styles.cardText}>
+                        <h3>Secure Shipping</h3>
+                        <p>on all oders</p>
+                    </div>
+                </div>
+                                <div className={styles.heroCard}>
+                    <div className={styles.cuboid}>
+                        <i>i</i>
+                    </div>
+                    <div className={styles.cardText}>
+                        <h3>Secure Shipping</h3>
+                        <p>on all oders</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     )
 
 }

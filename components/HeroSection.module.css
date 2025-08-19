@@ -1,6 +1,7 @@
 .heroWrapper{
   background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
   width: 100%;
+  position: relative;
 }
 
 .heroImage{
@@ -11,8 +12,8 @@
 }
 
 .heroText{
-  position: fixed;
-  top: 250px;
+  position: absolute;
+  top: 50px;
   margin: 40px;
   color: white;
   font-size: 30px
@@ -23,9 +24,9 @@
 }
 
 .heroBtns{
-  position: fixed;
-  width: 80%;
-  top: 680px;
+  position: absolute;
+  width: 96%;
+  top: 540px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -35,7 +36,7 @@
 }
 
 .heroNavBtn {
-  border-top: 4px solid #f3e4e4;
+  border-bottom: 4px solid #f3e4e4;
   display: inline-block;
   margin-left: 8px;
   padding: 10px;
@@ -45,7 +46,7 @@
 }
 
 .active{
-  border-top: 4px solid #FADD18;
+  border-bottom: 4px solid #FADD18;
 }
 
 .heroShopBtn{
@@ -56,3 +57,70 @@ border: 1px solid white;
 display: flex;
 
 }
+
+.heroCards{
+  background-color: white;
+  padding-top: 60px;
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  
+  
+}
+
+.heroCard{
+  width: 346px;
+  height: 180px;
+  background-color: #FEFAE1;
+  padding: 40px;
+  color: black;
+
+}
+
+.cuboid {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #fadd18; /* front face */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* left face */
+.cuboid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px; 
+  width: 40px;
+  height: 50px;
+  background: #dab90166;
+  transform: skewY(45deg);
+  transform-origin: right;
+}
+
+/* top face */
+.cuboid::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 50px;
+  height: 40px;
+  background: #e7d46666;
+  transform: skewX(45deg);
+  transform-origin: bottom;
+}
+
+.cardText{
+  padding: 14px 0;
+}
+
+.cardText h3{
+  margin-bottom: 4px;
+}
+

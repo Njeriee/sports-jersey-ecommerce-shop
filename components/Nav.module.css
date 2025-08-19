@@ -6,22 +6,19 @@
 
 .searchBar {
   display: flex;
+  margin-top: 16px;
   padding-left: 70px;
-  padding-bottom: 10px;
   border-bottom: 1px solid rgb(233, 229, 229);
-  padding-top: 16px;
 }
 
 .dropDown {
   overflow: hidden;
-  /* margin-left: 12px; */
 }
 
 .dropDown button{
   border: none;
   outline: none;
   background: none;
-  /* padding: 4px; */
   font-size: 16px;
   cursor: pointer;
 }
@@ -53,17 +50,22 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
+  
 }
 
 .searchInput input {
   border: none;
   font-size: large;
   cursor: pointer;
+
 }
 
 .searchSubmit {
-  height: 42px;
   display: flex;
+  margin-top: -4;
+  margin-bottom: 16;
+
+ 
 }
 
 .searchSubmit input{
@@ -95,3 +97,6 @@ textarea:focus {
   /* margin-top: 12px; */
   padding-right: 16px;
 }
+
+
+

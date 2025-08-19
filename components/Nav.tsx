@@ -7,7 +7,7 @@ export default function Navbar() {
             <div style={{ width: "90%", display: "grid", gridTemplateRows: " 1fr 1fr;" }}>
                 <div className={styles.searchBar}>
                     <div className={styles.dropDown}>
-                        <button>All Categories <i style={{padding:""}}>i</i> </button>
+                        <button>All Categories <i style={{marginRight:"60px"}}>i</i> </button>
                         <div className={styles.dropDownContent}>
                             <a href="#">T-shirts</a>
                             <a href="#">NBA</a>
