@@ -1,0 +1,41 @@
+.cardWrapper {
+    margin: 40px 0;
+    position: absolute;
+    border: 1px solid rgb(240, 232, 232);
+}
+
+.cardPhoto{
+    position: relative;
+}
+
+.discount{
+    position: absolute;
+    background-color: rgb(17, 194, 17);
+    color : white;
+    top: 220px;
+    margin: 20px;
+    padding: 8px 5px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+.cardText{
+    margin: 20;
+}
+.prices{
+    display: flex;
+    margin: 10px 0;   
+}
+
+.newprice{
+    font-size: larger;
+    font-weight: bolder;
+    margin-right:8px ;
+}
+
+.oldprice{
+    font-size: small;
+    text-decoration: line-through;
+    color: rgb(243, 67, 67);
+}
