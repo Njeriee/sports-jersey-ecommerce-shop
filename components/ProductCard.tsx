@@ -18,7 +18,7 @@ export default function ProductCard({ product }: { product: Product }) {
     )
 
     return (
-        <Link href={''}>
+        <Link href={'#'}>
             <div className={styles.cardWrapper}>
                 <div className={styles.cardPhoto}>
                     <img style={{ width: "300px", height: "300px" }} src="/Rectangle 20.jpg" alt="" />

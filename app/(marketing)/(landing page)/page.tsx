@@ -16,12 +16,12 @@ export default function Home() {
     '/image 5.jpg'
   ]
 
-  const legueImages: string[] = [
-    '/champions league.jpg',
-    '/champions league.jpg',
-    '/champions league.jpg',
-    '/champions league.jpg',
-    '/champions league.jpg',
+  const Leagues = [
+    { name: "Champions League", image: "/champions legue.jpg" },
+    { name: "Europe League", image: "/champions legue.jpg" },
+    { name: "Copa America", image: "/champions legue.jpg" },
+    { name: "Asian Cup", image: "/champions legue.jpg" },
+    { name: "African Nations Cup", image: "/champions legue.jpg" }
   ]
 
   return (
@@ -31,24 +31,25 @@ export default function Home() {
         <HeroSection imageUrls={carouselImages} />
         <div className={styles.productSection}>
           <h2>Most popular t-shirts</h2>
-          <div className= {styles.productCarousel}>
+          <div className={styles.productCarousel}>
             <div className={styles.productTrack}>
-              {products.map((product)=>(
-                <ProductCard key={product.id} product = {product} />
+              {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
               ))}
             </div>
           </div>
         </div>
         <div className={styles.leguesSection}>
           <h2>country leagues</h2>
-          <div className={styles.leguesCard}>
-            {legueImages.map((image)=>(
-              <img key = {image} src={image} alt="" />
-            ))}
-            <div>
-              <img src="/champions legue.jpg" alt="" />
-              <p>Champions League </p>
-            </div>
+          <div className={styles.leaguesDisplay}>
+            {
+              Leagues.map((league) => (
+                <div key={league.name} className={styles.leguesCard}>
+                  <img src={league.image} alt={league.name} />
+                  <p>{league.name}</p>
+                </div>
+              ))
+            }
           </div>
         </div>
         <div className={styles.otherCollectionsSection}>
@@ -64,7 +65,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-       <Footer/>
+      <Footer />
     </div>
   )
 }

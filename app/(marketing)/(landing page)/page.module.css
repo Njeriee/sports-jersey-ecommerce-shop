@@ -32,8 +32,7 @@
 
 .leguesSection img{
     margin: 40px 0;
-    width: 350px;
-    height: 350px;
+    width: 100%;
     /* position: absolute; */
 }
 
@@ -49,6 +48,12 @@
     text-align: left;
     font-size: 24px;
     margin-top: -20px;
+}
+
+.leaguesDisplay {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1rem;
 }
 
 .otherCollectionsSection{
