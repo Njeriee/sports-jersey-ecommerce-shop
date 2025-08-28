@@ -18,10 +18,25 @@ export default function Home() {
 
   const Leagues = [
     { name: "Champions League", image: "/champions legue.jpg" },
-    { name: "Europe League", image: "/champions legue.jpg" },
+    { name: "Europe League", image: "/europa league.jpg" },
     { name: "Copa America", image: "/champions legue.jpg" },
     { name: "Asian Cup", image: "/champions legue.jpg" },
     { name: "African Nations Cup", image: "/champions legue.jpg" }
+  ]
+
+  const Collections = [
+    { name: "Kids", image: "/kids collection.jpg" },
+    { name: "Large Sizes", image: "/large sizes.jpg" },
+    { name: "Goalkeeper", image: "/kids collection.jpg" },
+    { name: "Authentic/Pro Player", image: "/large sizes.jpg" },
+    { name: "Shorts", image: "/kids collection.jpg" },
+    { name: "socks", image: "/large sizes.jpg" }
+
+
+
+
+
+
   ]
 
   return (
@@ -54,15 +69,19 @@ export default function Home() {
         </div>
         <div className={styles.otherCollectionsSection}>
           <h2>Other collections</h2>
-          <div className={styles.card}>
-            <div className={styles.collectionImage}>
-              <img src="/kids collection.jpg" alt="" />
-            </div>
-            <div className={styles.collectionLabel}>
-              <div><p>kids</p></div>
-              <div> i </div>
-            </div>
-          </div>
+          <div className={styles.collectionDisplay}>
+            {
+              Collections.map((collection) => (
+                <div key={collection.name} className={styles.collectionCard}>
+                  <img src={collection.image} alt={collection.name} />
+                  <div className={styles.collectionLabel}>
+                    <p>{collection.name}</p>
+                    <button>vdjhbjh</button>
+                  </div>
+                </div>
+              ))
+            }
+          </div>  
         </div>
       </div>
       <Footer />
@@ -70,11 +89,3 @@ export default function Home() {
   )
 }
 
-
-{/* <div>
-  {imageUrls.map((_, i) => (
-    // buttons to navigate to specific images
-    <div key={i} onClick={() => setImageIndex(i)}
-      className={`${styles.heroNavBtn} ${index === i ? styles.active : ""}`}></div>
-  ))}
-</div> */}

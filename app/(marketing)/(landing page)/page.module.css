@@ -65,12 +65,30 @@
   margin: 10px 0px;
 }
 
-.collectionImage{
+.collectionDisplay{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+
+.collectionCard{
   position: relative;
 }
 
-.collectionLabel{
-  display: flex;
-  /* position: absolute; */
-  justify-content: space-between;
+.collectionCard img{
+  width: 100%;
+  object-fit: cover;
 }
+
+.collectionLabel{
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0.5rem;
+  background-color: rgb(61, 64, 66 ,0.5);
+  width: 100%;
+
+
+}
+
