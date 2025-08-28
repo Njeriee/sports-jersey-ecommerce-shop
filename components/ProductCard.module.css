@@ -1,7 +1,8 @@
 .cardWrapper {
     margin: 40px 0;
-    position: absolute;
+    /* position: absolute; */
     border: 1px solid rgb(240, 232, 232);
+    width: 300px;
 }
 
 .cardPhoto{
@@ -12,7 +13,7 @@
     position: absolute;
     background-color: rgb(17, 194, 17);
     color : white;
-    top: 220px;
+    top:1400px;
     margin: 20px;
     padding: 8px 5px;
     font-weight: bold;

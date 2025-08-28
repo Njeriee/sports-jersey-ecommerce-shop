@@ -45,34 +45,35 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
                         <p>on all oders</p>
                     </div>
                 </div>
-                                <div className={styles.heroCard}>
+                <div className={styles.heroCard}>
                     <div className={styles.cuboid}>
                         <i>i</i>
                     </div>
                     <div className={styles.cardText}>
-                        <h3>Secure Shipping</h3>
-                        <p>on all oders</p>
+                        <h3>Telephone</h3>
+                        <p>+1 23 456 7890 </p>
                     </div>
                 </div>
-                                <div className={styles.heroCard}>
+                <div className={styles.heroCard}>
                     <div className={styles.cuboid}>
                         <i>i</i>
                     </div>
                     <div className={styles.cardText}>
-                        <h3>Secure Shipping</h3>
-                        <p>on all oders</p>
+                        <h3>Chat Whatsapp</h3>
+                        <p>Mon - Fri 9.00 - 21.00
+                            Sat - Sun 9.00 - 17.00
+                        </p>
                     </div>
                 </div>
-                                <div className={styles.heroCard}>
+                <div className={styles.heroCard}>
                     <div className={styles.cuboid}>
                         <i>i</i>
                     </div>
                     <div className={styles.cardText}>
-                        <h3>Secure Shipping</h3>
-                        <p>on all oders</p>
+                        <h3>Quality Guarantee</h3>
+                        <p>Verified Purchase Reviews</p>
                     </div>
                 </div>
-
             </div>
         </div>
 

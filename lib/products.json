@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "name": "Real Madrid Home Jersey 2024/25",
+    "team": "Real Madrid",
+    "league": "La Liga",
+    "oldPrice": 99.99,
+    "price": 89.99,
+    "description": "Official Adidas Real Madrid home jersey for the 2024/25 season.",
+    "image": "/images/realmadrid_home_24.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Real Madrid Away Jersey 2024/25",
+    "team": "Real Madrid",
+    "league": "La Liga",
+    "oldPrice": 89.99,
+    "price": 89.99,
+    "description": "Sleek away kit with navy design for the 2024/25 campaign.",
+    "image": "/images/realmadrid_away_24.jpg"
+  },
+  {
+    "id": "3",
+    "name": "FC Barcelona Home Jersey 2024/25",
+    "team": "FC Barcelona",
+    "league": "La Liga",
+    "oldPrice": 104.99,
+    "price": 89.99,
+    "description": "Classic Blaugrana stripes for Barça’s 2024/25 season.",
+    "image": "/images/barcelona_home_24.jpg"
+  },
+  {
+    "id": "4",
+    "name": "FC Barcelona Away Jersey 2024/25",
+    "team": "FC Barcelona",
+    "league": "La Liga",
+    "oldPrice": 84.99,
+    "price": 84.99,
+    "description": "Gold away kit inspired by Barcelona’s Catalan heritage.",
+    "image": "/images/barcelona_away_24.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Manchester United Home Jersey 2024/25",
+    "team": "Manchester United",
+    "league": "Premier League",
+    "oldPrice": 109.99,
+    "price": 94.99,
+    "description": "Red Devils home jersey with classic white collar trim.",
+    "image": "/images/manutd_home_24.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Manchester United Away Jersey 2024/25",
+    "team": "Manchester United",
+    "league": "Premier League",
+    "oldPrice": 89.99,
+    "price": 89.99,
+    "description": "Stylish black and red away kit for the 2024/25 season.",
+    "image": "/images/manutd_away_24.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Liverpool Home Jersey 2024/25",
+    "team": "Liverpool",
+    "league": "Premier League",
+    "oldPrice": 99.99,
+    "price": 89.99,
+    "description": "Iconic red kit with white sleeve accents for Anfield nights.",
+    "image": "/images/liverpool_home_24.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Liverpool Away Jersey 2024/25",
+    "team": "Liverpool",
+    "league": "Premier League",
+    "oldPrice": 84.99,
+    "price": 84.99,
+    "description": "Teal and white away strip for the Reds’ travels.",
+    "image": "/images/liverpool_away_24.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Chelsea Home Jersey 2024/25",
+    "team": "Chelsea",
+    "league": "Premier League",
+    "oldPrice": 94.99,
+    "price": 89.99,
+    "description": "Classic blue with modern geometric detailing.",
+    "image": "/images/chelsea_home_24.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Chelsea Away Jersey 2024/25",
+    "team": "Chelsea",
+    "league": "Premier League",
+    "oldPrice": 84.99,
+    "price": 84.99,
+    "description": "Clean white kit with blue trims for away matches.",
+    "image": "/images/chelsea_away_24.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Arsenal Home Jersey 2024/25",
+    "team": "Arsenal",
+    "league": "Premier League",
+    "oldPrice": 109.99,
+    "price": 94.99,
+    "description": "The Gunners’ iconic red-and-white jersey for the Emirates.",
+    "image": "/images/arsenal_home_24.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Arsenal Away Jersey 2024/25",
+    "team": "Arsenal",
+    "league": "Premier League",
+    "oldPrice": 89.99,
+    "price": 89.99,
+    "description": "Vibrant yellow away kit inspired by Highbury days.",
+    "image": "/images/arsenal_away_24.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Bayern Munich Home Jersey 2024/25",
+    "team": "Bayern Munich",
+    "league": "Bundesliga",
+    "oldPrice": 99.99,
+    "price": 89.99,
+    "description": "Mia San Mia red design for the Bavarians’ dominance.",
+    "image": "/images/bayern_home_24.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Bayern Munich Away Jersey 2024/25",
+    "team": "Bayern Munich",
+    "league": "Bundesliga",
+    "oldPrice": 84.99,
+    "price": 84.99,
+    "description": "Black and gold detailing in Bayern’s away kit.",
+    "image": "/images/bayern_away_24.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Borussia Dortmund Home Jersey 2024/25",
+    "team": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "oldPrice": 109.99,
+    "price": 89.99,
+    "description": "Vibrant yellow with bold black stripes for BVB.",
+    "image": "/images/dortmund_home_24.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Borussia Dortmund Away Jersey 2024/25",
+    "team": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "oldPrice": 84.99,
+    "price": 84.99,
+    "description": "Grey and neon green away design for the Yellow Wall.",
+    "image": "/images/dortmund_away_24.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Juventus Home Jersey 2024/25",
+    "team": "Juventus",
+    "league": "Serie A",
+    "oldPrice": 99.99,
+    "price": 89.99,
+    "description": "Black-and-white stripes for the Old Lady, reinvented.",
+    "image": "/images/juventus_home_24.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Juventus Away Jersey 2024/25",
+    "team": "Juventus",
+    "league": "Serie A",
+    "oldPrice": 84.99,
+    "price": 84.99,
+    "description": "Bold orange with graphic patterns for Juve’s away trips.",
+    "image": "/images/juventus_away_24.jpg"
+  },
+  {
+    "id": "19",
+    "name": "AC Milan Home Jersey 2024/25",
+    "team": "AC Milan",
+    "league": "Serie A",
+    "oldPrice": 94.99,
+    "price": 89.99,
+    "description": "Rossoneri stripes, modern design for San Siro nights.",
+    "image": "/images/milan_home_24.jpg"
+  },
+  {
+    "id": "20",
+    "name": "AC Milan Away Jersey 2024/25",
+    "team": "AC Milan",
+    "league": "Serie A",
+    "oldPrice": 89.99,
+    "price": 89.99,
+    "description": "White away strip with red and black accents.",
+    "image": "/images/milan_away_24.jpg"
+  }
+]

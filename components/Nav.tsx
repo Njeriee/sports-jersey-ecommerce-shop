@@ -28,7 +28,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className={styles.navMenu}>
-                    <a href="/home">Home</a>
+                    <a href="/">Home</a>
                     <div className={styles.dropDown}>
                         <button>T-shirts <i>i</i></button>
                         <div className={styles.dropDownContent} >
