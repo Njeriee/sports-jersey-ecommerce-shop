@@ -22,14 +22,14 @@ export default function ProductCard({ product }: { product: Product }) {
             <div className={styles.cardWrapper}>
                 <div className={styles.cardPhoto}>
                     <img style={{ width: "300px", height: "300px" }} src="/Rectangle 20.jpg" alt="" />
+                    {
+                        hasDiscount ? (
+                            <div className={styles.discount}>
+                                {percentageDiscount} %
+                            </div>
+                        ) : ('')
+                    }
                 </div>
-                {
-                    hasDiscount ? (
-                        <div className={styles.discount}>
-                            {percentageDiscount} %
-                        </div>
-                    ) : ('')
-                }
                 <div className={styles.cardText}>
                     <p>{product.name}</p>
                     <div className={styles.prices}>

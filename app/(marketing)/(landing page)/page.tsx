@@ -19,18 +19,18 @@ export default function Home() {
   const Leagues = [
     { name: "Champions League", image: "/champions legue.jpg" },
     { name: "Europe League", image: "/europa league.jpg" },
-    { name: "Copa America", image: "/champions legue.jpg" },
-    { name: "Asian Cup", image: "/champions legue.jpg" },
-    { name: "African Nations Cup", image: "/champions legue.jpg" }
+    { name: "Copa America", image: "/copa america.png" },
+    { name: "Asian Cup", image: "/asian cup.png" },
+    { name: "African Nations Cup", image: "/africa cup.jpg" }
   ]
 
   const Collections = [
     { name: "Kids", image: "/kids collection.jpg" },
     { name: "Large Sizes", image: "/large sizes.jpg" },
-    { name: "Goalkeeper", image: "/kids collection.jpg" },
-    { name: "Authentic/Pro Player", image: "/large sizes.jpg" },
-    { name: "Shorts", image: "/kids collection.jpg" },
-    { name: "socks", image: "/large sizes.jpg" }
+    { name: "Goalkeeper", image: "/goal keeper.jpg" },
+    { name: "Authentic/Pro Player", image: "/authentic pro player.jpg" },
+    { name: "Shorts", image: "/shorts.jpg" },
+    { name: "socks", image: "/socks.jpg" }
 
 
 
@@ -42,8 +42,10 @@ export default function Home() {
   return (
     <div style={{ display: "grid", gridAutoColumns: 'auto' }}>
       <Nav />
-      <div style={{ margin: "68px", display: "" }}>
+      <div style={{ margin: "4.5rem"}}>
+        
         <HeroSection imageUrls={carouselImages} />
+        
         <div className={styles.productSection}>
           <h2>Most popular t-shirts</h2>
           <div className={styles.productCarousel}>
@@ -54,6 +56,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
         <div className={styles.leguesSection}>
           <h2>country leagues</h2>
           <div className={styles.leaguesDisplay}>
@@ -67,6 +70,7 @@ export default function Home() {
             }
           </div>
         </div>
+
         <div className={styles.otherCollectionsSection}>
           <h2>Other collections</h2>
           <div className={styles.collectionDisplay}>
@@ -81,8 +85,37 @@ export default function Home() {
                 </div>
               ))
             }
-          </div>  
+          </div>
         </div>
+
+        <section className={styles.socials}>
+          <div className={styles.socialsCard}>
+            <img src="/personalization.png" alt="" />
+            <div className={styles.socialsTxt}>
+              <h3>personalization</h3>
+              <p>
+                Put a custom print on the football shirt of your choice with
+                our Personalization service
+              </p>
+              <p>
+                Tell us your name and what number and we put it <span>Free!!!</span>
+              </p>
+            </div>
+          </div>
+          <div className={styles.socialsCard}>
+            <img src="/socials.png" alt="" />
+            <div className={styles.socialsTxt}>
+              <h3>Social networks</h3>
+              <p>Share your shirts with us with the #CamisetasFutbolSpainnn</p>
+              <div>
+                <a href="">fb</a>
+                <a href="">x</a>
+                <a href="">insta</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
       <Footer />
     </div>

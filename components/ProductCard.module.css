@@ -13,11 +13,11 @@
     position: absolute;
     background-color: rgb(17, 194, 17);
     color : white;
-    top:1400px;
+    bottom: 0;
     margin: 20px;
     padding: 8px 5px;
     font-weight: bold;
-    width: 100px;
+    width: 5rem;
     text-align: center;
 }
 

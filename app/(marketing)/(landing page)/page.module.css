@@ -1,23 +1,23 @@
 .productSection {
-  padding: 40px 0;
+  padding: 8rem 0;
   /* position: absolute; */
   display: grid;
   grid-template-columns: auto;
 }
 
 .productSection h2 {
-  font-size: 44px;
-  margin: 10px 0px;
+  font-size: 3rem;
+  margin: 3rem 0;
 }
 
-.productCarousel{
+.productCarousel {
   overflow: hidden;
   width: 100%;
 }
 
-.productTrack{
+.productTrack {
   display: flex;
-  gap:  2rem;
+  gap: 2rem;
   animation: scroll 30s linear infinite;
 }
 
@@ -30,24 +30,27 @@
   }
 } */
 
-.leguesSection img{
-    margin: 40px 0;
-    width: 100%;
-    /* position: absolute; */
+.leguesSection{
+  margin-bottom: 8rem;
+
 }
 
-
+.leguesSection img {
+  margin: 4rem 0;
+  width: 100%;
+}
 
 .leguesSection h2 {
-  font-size: 44px;
+  font-size: 3rem;
   margin: 10px 0px;
+  text-transform: uppercase;
 }
 
-.leguesSection p{
-    font-weight: bold;
-    text-align: left;
-    font-size: 24px;
-    margin-top: -20px;
+.leguesSection p {
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  margin-top: -20px;
 }
 
 .leaguesDisplay {
@@ -56,39 +59,78 @@
   gap: 1rem;
 }
 
-.otherCollectionsSection{
-  padding: 40px 0;
+.otherCollectionsSection h2 {
+  font-size: 3rem;
+  margin: 6rem 0;
+  text-transform: uppercase;
 }
 
-.otherCollectionsSection h2{
-  font-size: 44px;
-  margin: 10px 0px;
-}
-
-.collectionDisplay{
+.collectionDisplay {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 2rem;
 }
 
-.collectionCard{
+.collectionCard {
   position: relative;
 }
 
-.collectionCard img{
+.collectionCard img {
   width: 100%;
   object-fit: cover;
 }
 
-.collectionLabel{
+.collectionLabel {
   bottom: 0px;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  padding: 0.5rem;
-  background-color: rgb(61, 64, 66 ,0.5);
+  padding: 0.8rem;
+  /* background-color: rgba(5, 5, 5, 0.5); */
   width: 100%;
-
-
+  color: white;
 }
 
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  padding: 6rem 0;
+  color: white;
+}
+
+.socialsCard {
+  width: 50%;
+  position: relative;
+  background-color:  rgba(0, 0, 0, 0.9);
+}
+
+.socialsCard img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.socialsTxt {
+  position: absolute;
+  bottom: 0;
+  margin: 2rem;
+  padding: 2rem;
+  
+}
+
+.socialsTxt p{
+  line-height: 4rem;
+}
+
+.socialsTxt h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform:uppercase;
+  margin: 2rem 0;
+}
+
+.socialsTxt span{
+  font-weight: bold;
+  text-transform: uppercase;
+}

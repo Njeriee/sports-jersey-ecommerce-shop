@@ -1,11 +1,13 @@
+import styles from './Footer.module.css'
+
 export default function Footer() {
     return (
-        <div>
-            <div>
+        <div className={styles.wrapper}>
+            <div className={styles.footerMenu}>
                 <div>
-                    <p>Main Menu</p>
+                    <h4>Main Menu</h4>
                     <ul>
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="">Home</a></li>
                         <li><a href="#">T-shirts</a></li>
                         <li><a href="#">NBA</a></li>
                         <li><a href="#">Tracksuits</a></li>
@@ -15,7 +17,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <p>Secondary Menu</p>
+                    <h4>Secondary Menu</h4>
                     <ul>
                         <li><a href="#">Search</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -25,21 +27,21 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <p>Subscribe</p>
+                    <h4>Subscribe</h4>
                     <p>Subscribe to our mailing list to receive the lates news.</p>
-                    <div>
-                        <input type="text" />
+                    <div className={styles.mail}>
+                        <input type="text" placeholder='Email Address' />
                         <button>mail</button>
                     </div>
                 </div>
                 <div>
-                    <p>Follow Us</p>
+                    <h4>Follow Us</h4>
                     <p>FB</p>
                     <p>X</p>
                     <p>Insta</p>
                 </div>
             </div>
-            <div>
+            <div className={styles.copyright}>
                 <div>
                     <p>c Jambulani All rights reserved</p>
                 </div>
