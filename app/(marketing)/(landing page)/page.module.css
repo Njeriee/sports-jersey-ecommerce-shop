@@ -1,37 +1,7 @@
-.productSection {
-  padding: 8rem 0;
-  /* position: absolute; */
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.productSection h2 {
-  font-size: 3rem;
-  margin: 3rem 0;
-}
-
-.productCarousel {
-  overflow: hidden;
-  width: 100%;
-}
-
-.productTrack {
-  display: flex;
-  gap: 2rem;
-  animation: scroll 30s linear infinite;
-}
-
-/* @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-} */
 
 .leguesSection{
   margin-bottom: 8rem;
+  
 
 }
 
@@ -54,12 +24,28 @@
 }
 
 .leaguesDisplay {
+  /* margin: 0 2rem; */
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 1rem;
+  /* width: max-content; */
+  animation: scroll 10s linear infinite;
 }
 
-.otherCollectionsSection h2 {
+@keyframes scroll {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
+}
+
+.collectionsSection{
+  margin: 8rem 0;
+}
+
+.collectionsSection h2 {
   font-size: 3rem;
   margin: 6rem 0;
   text-transform: uppercase;
@@ -73,23 +59,52 @@
 
 .collectionCard {
   position: relative;
+  height: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.collectionCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .collectionCard img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 .collectionLabel {
   bottom: 0px;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  padding: 0.8rem;
-  /* background-color: rgba(5, 5, 5, 0.5); */
   width: 100%;
   color: white;
+  background: rgba(5, 5, 5, 0.2); 
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); 
 }
+
+.collectionLabel p{
+  margin: 1rem;
+  width: 90%;
+}
+
+.collectionLabel button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 100%;             
+  background-color: #fadd18;
+  padding: 1rem;           
+  display: flex;
+  align-items: center; 
+  width: 10%;      
+}
+
 
 .socials {
   display: flex;

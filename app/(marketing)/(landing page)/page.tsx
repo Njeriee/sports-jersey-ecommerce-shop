@@ -1,10 +1,10 @@
 import Nav from "@/components/Nav";
-import HeroSection from "@/components/HeroSection";
-import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
+import ProductSection from "@/components/ProductSection";
 
-import styles from './page.module.css'
-import products from "@/lib/products.json";
+import styles from './page.module.css';
+import HeroSection from "@/components/HeroSection";
+
 
 export default function Home() {
 
@@ -45,16 +45,9 @@ export default function Home() {
       <div style={{ margin: "4.5rem"}}>
         
         <HeroSection imageUrls={carouselImages} />
-        
-        <div className={styles.productSection}>
-          <h2>Most popular t-shirts</h2>
-          <div className={styles.productCarousel}>
-            <div className={styles.productTrack}>
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
+
+        <div>
+          <ProductSection/>
         </div>
         
         <div className={styles.leguesSection}>
@@ -71,7 +64,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.otherCollectionsSection}>
+        <div className={styles.collectionsSection}>
           <h2>Other collections</h2>
           <div className={styles.collectionDisplay}>
             {
@@ -80,8 +73,9 @@ export default function Home() {
                   <img src={collection.image} alt={collection.name} />
                   <div className={styles.collectionLabel}>
                     <p>{collection.name}</p>
-                    <button>vdjhbjh</button>
+                    <button>btn</button>
                   </div>
+                  <div className={styles.collectionLabel2}></div>
                 </div>
               ))
             }

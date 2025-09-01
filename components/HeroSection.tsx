@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import styles from './HeroSection.module.css'
 
 type HeroSectionProps = {
@@ -9,6 +9,16 @@ type HeroSectionProps = {
 
 export default function HeroSection({ imageUrls }: HeroSectionProps) {
     const [index, setImageIndex] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setImageIndex(prev =>
+                prev === imageUrls.length - 1 ? 0 : prev + 1
+            )
+        }, 4000) 
+
+        return () => clearInterval(interval) // cleanup on unmount
+    }, [])
 
     return (
         <div className={styles.heroWrapper}>

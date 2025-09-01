@@ -18,26 +18,40 @@ export default function ProductCard({ product }: { product: Product }) {
     )
 
     return (
-        <Link href={'#'}>
-            <div className={styles.cardWrapper}>
-                <div className={styles.cardPhoto}>
-                    <img style={{ width: "300px", height: "300px" }} src="/Rectangle 20.jpg" alt="" />
-                    {
-                        hasDiscount ? (
-                            <div className={styles.discount}>
-                                {percentageDiscount} %
+        <Link href={'#'} className={styles.cardWrapper}>
+
+                
+                   { hasDiscount ? (
+                        <div>
+                            <div className={styles.cardPhoto}>
+                                <img style={{ width: "300px", height: "300px" }} src="/Rectangle 20.jpg" alt="" />
+                                <div className={styles.discount}>
+                                    {percentageDiscount} %
+                                </div>
                             </div>
-                        ) : ('')
-                    }
-                </div>
-                <div className={styles.cardText}>
-                    <p>{product.name}</p>
-                    <div className={styles.prices}>
-                        <p className={styles.newprice}>{product.price}</p>
-                        <p className={styles.oldprice}>{product.oldPrice}</p>
-                    </div>
-                </div>
-            </div>
+                            <div className={styles.cardText}>
+                                <p>{product.name}</p>
+                                <div className={styles.prices}>
+                                    <p className={styles.newprice}>{product.price}</p>
+                                    <p className={styles.oldprice}>{product.oldPrice}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ) : (<div>
+
+                        <div className={styles.cardPhoto}>
+                            <img style={{ width: "300px", height: "300px",display:"block",objectFit:"cover" }} src="/Rectangle 20.jpg" alt="" />
+                        </div>
+                        <div className={styles.cardText}>
+                            <p>{product.name}</p>
+                            <div className={styles.prices}>
+                                <p className={styles.newprice}>{product.price}</p>
+                            </div>
+                        </div>
+
+                    </div>)
+                }
+        
         </Link>
     )
 }

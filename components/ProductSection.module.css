@@ -1,0 +1,33 @@
+.productSection {
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.productHeadingAndButtons {
+  margin: 3rem 0;
+}
+
+.productHeadingAndButtons h2 {
+  font-size: 3rem;
+}
+
+.productHeadingAndButtons button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  background-color: #fadd18;
+  padding: 1rem;
+}
+
+.productCarousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.productTrack {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease;
+}
