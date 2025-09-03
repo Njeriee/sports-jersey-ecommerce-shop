@@ -45,8 +45,8 @@
   padding: 1rem;
 }
 
-input:focus,
-textarea:focus {
+.mail input:focus,
+.mail textarea:focus {
   outline: none;
   box-shadow: none;
 }
