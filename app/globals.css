@@ -11,6 +11,6 @@ a {
 }
 
 html,body{
-  font-family: sans-serif;
+    font-family: var(--font-montserrat), sans-serif;
 }
 
