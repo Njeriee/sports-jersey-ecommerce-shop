@@ -1,13 +1,20 @@
+'use client'
+
+import Link from 'next/link'
 import styles from './Nav.module.css'
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+
+     const pathname = usePathname();
+
     return (
         <section className={styles.navbarContainer}>
-            <div style={{ width: "10%", backgroundColor: "#FADD18" }}></div>
-            <div style={{ width: "90%", display: "grid", gridTemplateRows: " 1fr 1fr;" }}>
+            <div style={{ width: "15%", height:"100%", backgroundColor: "#FADD18" }}></div>
+            <div style={{ width: "85%", display: "grid", gridTemplateRows: " 1fr 1fr;" }}>
                 <div className={styles.searchBar}>
-                    <div className={styles.dropDown}>
-                        <button>All Categories <i style={{marginRight:"60px"}}>i</i> </button>
+                    <div className={styles.dropDown} style={{width:"10%"}}>
+                        <button>All Categories <i >i</i></button>
                         <div className={styles.dropDownContent}>
                             <a href="#">T-shirts</a>
                             <a href="#">NBA</a>
@@ -26,9 +33,15 @@ export default function Navbar() {
                             <div style={{ backgroundColor: "black", color:"white", textAlign:"center", width: "40px" }}><i>i</i></div>
                         </div>
                     </div>
+                    <div className={styles.shoppingCart}>
+                        <img src="/shopping cart.svg" alt="" />
+                    </div>
+                    <div className={styles.userProfile}>
+                        <img src="/profile img.svg" alt="" />
+                    </div>
                 </div>
                 <div className={styles.navMenu}>
-                    <a href="/">Home</a>
+                    <Link href="/" className={pathname === "/" ? styles.active : ""}>Home</Link>
                     <div className={styles.dropDown}>
                         <button>T-shirts <i>i</i></button>
                         <div className={styles.dropDownContent} >
@@ -38,7 +51,8 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className={styles.dropDown}>
-                        <button>NBA<i>i </i></button>
+                        <button>NBA<i>
+                            </i></button>
                         <div className={styles.dropDownContent} >
                             <a href="#">Larger</a>
                             <a href="#">Extra Large</a>
@@ -54,7 +68,7 @@ export default function Navbar() {
                         </div>
                     </div>
                     <a href="#">Products Delivery . 1 - 2 days</a>
-                    <a href="/contact">Contact</a>
+                    <a href="#">Contact</a>
                     <a href="#">Reviews</a>
                 </div>
             </div>

@@ -13,12 +13,13 @@
 }
 
 .productHeadingAndButtons button {
-  border: none;
+  border: 1px solid rgb(224, 224, 224);
   outline: none;
   background: none;
   cursor: pointer;
-  background-color: #fadd18;
+  /* background-color: #fadd18; */
   padding: 1rem;
+  margin: 0.25rem;
 }
 
 .productCarousel {
@@ -26,8 +27,9 @@
   width: 100%;
 }
 
+
 .productTrack {
   display: flex;
   gap: 2rem;
-  transition: transform 0.5s ease;
+  /* transition: transform 0.5s ease; */
 }

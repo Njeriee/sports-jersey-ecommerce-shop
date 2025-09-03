@@ -32,8 +32,8 @@ export default function ProductCard({ product }: { product: Product }) {
                             <div className={styles.cardText}>
                                 <p>{product.name}</p>
                                 <div className={styles.prices}>
-                                    <p className={styles.newprice}>{product.price}</p>
-                                    <p className={styles.oldprice}>{product.oldPrice}</p>
+                                    <p className={styles.newprice}>₤{product.price}</p>
+                                    <p className={styles.oldprice}>₤{product.oldPrice}</p>
                                 </div>
                             </div>
                         </div>
@@ -43,9 +43,9 @@ export default function ProductCard({ product }: { product: Product }) {
                             <img style={{ width: "300px", height: "300px",display:"block",objectFit:"cover" }} src="/Rectangle 20.jpg" alt="" />
                         </div>
                         <div className={styles.cardText}>
-                            <p>{product.name}</p>
+                            <p className={styles.productName}>{product.name}</p>
                             <div className={styles.prices}>
-                                <p className={styles.newprice}>{product.price}</p>
+                                <p className={styles.newprice}>₤{product.price}</p>
                             </div>
                         </div>
 

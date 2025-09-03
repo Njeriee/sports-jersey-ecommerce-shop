@@ -28,12 +28,13 @@
 }
 
 .cardText {
-  margin: 20px; /* fixed: should be px */
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin: 20px;
+  /* display: -webkit-box; */
+  /* -webkit-line-clamp: 2; */
+  /* -webkit-box-orient: vertical */
 }
+
+
 
 .prices {
   display: flex;

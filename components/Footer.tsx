@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
             <div className={styles.copyright}>
                 <div>
-                    <p>c Jambulani All rights reserved</p>
+                    <p>©Jambulani All rights reserved</p>
                 </div>
                 <div>
                     <p>apple pay</p>
