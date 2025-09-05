@@ -2,6 +2,7 @@
   background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
   width: 100%;
   position: relative;
+  height: 100vh;
 }
 
 .heroImage{
@@ -31,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  padding-bottom: 20rem;
 
 
 }
@@ -62,7 +64,7 @@ display: flex;
   background-color: white;
   padding-top: 60px;
   display: flex;
-  /* gap: 10px; */
+  gap: 2rem;
   justify-content: space-between;
   
   

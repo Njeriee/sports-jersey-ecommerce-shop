@@ -41,7 +41,7 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
                     ))}
                 </div>
                 <div className={styles.heroShopBtn}>
-                    <div style={{ margin: "10px", width: "70%" }} >Shop now</div>
+                    <div style={{ margin: "0.4rem", width: "70%" }} >Shop now</div>
                     <div style={{ width: "30%", backgroundColor: "white" }} ></div>
                 </div>
             </div>

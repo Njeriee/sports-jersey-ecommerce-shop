@@ -10,10 +10,10 @@ export default function Home() {
 
   const carouselImages: string[] = [
     '/image 1.jpg',
-    '/image 2.jpeg',
-    '/image 3.jpg',
+    '/close-up-athlete-playing-soccer.jpg',
+    '/soccer-game-concept.jpg',
     '/image 4.jpg',
-    '/image 5.jpg'
+    '/soccer-players-action-professional-stadium.jpg'
   ]
 
   const Leagues = [
@@ -40,7 +40,7 @@ export default function Home() {
   ]
 
   return (
-    <div style={{ display: "grid", gridAutoColumns: 'auto' }}>
+    <div>
       <Nav />
       <div style={{ margin: "4.5rem"}}>
         
