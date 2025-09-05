@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <div style={{ margin: "4.5rem"}}>
+      <div style={{ margin: "4rem"}}>
         
         <HeroSection imageUrls={carouselImages} />
 

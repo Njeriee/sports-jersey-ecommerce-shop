@@ -15,36 +15,36 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
             setImageIndex(prev =>
                 prev === imageUrls.length - 1 ? 0 : prev + 1
             )
-        }, 4000) 
+        }, 4000)
 
         return () => clearInterval(interval) // cleanup on unmount
     }, [])
 
     return (
         <div className={styles.heroWrapper}>
-            <div className={styles.heroImage} >
-                <img style={{ height: "100%", width: "100%", objectFit: "cover" }} src={imageUrls[index]} alt="" />
+            <div className={styles.heroImage}>
+                <img src={imageUrls[index]} alt="" />
+                <div className={styles.heroText}>
+                    <h1>Your favorite customized <br />
+                        <span>Club Jerseys.</span>
+                    </h1>
+                </div>
+
+                <div className={styles.heroBtns}>
+                    <div>
+                        {imageUrls.map((_, i) => (
+                            // buttons to navigate to specific images
+                            <div key={i} onClick={() => setImageIndex(i)}
+                                className={`${styles.heroNavBtn} ${index === i ? styles.active : ""}`}></div>
+                        ))}
+                    </div>
+                    <div className={styles.heroShopBtn}>
+                        <div style={{ margin: "0.4rem", width: "70%" }} >Shop now</div>
+                        <div style={{ width: "30%", backgroundColor: "white" }} ></div>
+                    </div>
+                </div>
             </div>
 
-            <div className={styles.heroText}>
-                <h1>Your favorite customized <br />
-                    <span>Club Jerseys.</span>
-                </h1>
-            </div>
-
-            <div className={styles.heroBtns}>
-                <div>
-                    {imageUrls.map((_, i) => (
-                        // buttons to navigate to specific images
-                        <div key={i} onClick={() => setImageIndex(i)}
-                            className={`${styles.heroNavBtn} ${index === i ? styles.active : ""}`}></div>
-                    ))}
-                </div>
-                <div className={styles.heroShopBtn}>
-                    <div style={{ margin: "0.4rem", width: "70%" }} >Shop now</div>
-                    <div style={{ width: "30%", backgroundColor: "white" }} ></div>
-                </div>
-            </div>
             <div className={styles.heroCards}>
                 <div className={styles.heroCard}>
                     <div className={styles.cuboid}>
