@@ -3,6 +3,7 @@
   height: 125px;
   display: flex;
   border-bottom: 1px solid rgb(233, 229, 229);
+  /* color: #b9b9b9; */
 }
 
 .searchBar {
@@ -113,20 +114,24 @@
   justify-content: space-between;
   width: 66%;
   font-weight: bolder;
+  color: #7e7e7e;
 }
 
 .navMenu button{
   font-weight: bold;
+  color: #7e7e7e;
 }
 
 .navMenu a{
   /* padding-right: 16px; */
   /* margin-top: 12px; */
-  color: #4a4a4b;
+  /* color: #4a4a4b; */
+  /* color: #7e7e7e; */
 }
 
 .navMenu .dropDown{
-  padding-right: 16px;
+  /* padding-right: 16px; */
+  color: #4a4a4b;
   
 }
 

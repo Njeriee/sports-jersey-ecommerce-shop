@@ -1,3 +1,7 @@
+.home{
+  margin: 4rem;
+}
+
 
 .leguesSection{
   margin-bottom: 8rem;
@@ -148,4 +152,10 @@
 .socialsTxt span{
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 40rem) {
+  .home{
+    margin: 2rem 0rem;
+  }
 }

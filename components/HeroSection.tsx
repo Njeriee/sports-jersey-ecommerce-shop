@@ -17,7 +17,7 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
             )
         }, 4000)
 
-        return () => clearInterval(interval) // cleanup on unmount
+        return () => clearInterval(interval) 
     }, [])
 
     return (
@@ -39,7 +39,7 @@ export default function HeroSection({ imageUrls }: HeroSectionProps) {
                         ))}
                     </div>
                     <div className={styles.heroShopBtn}>
-                        <div style={{ margin: "0.4rem", width: "70%" }} >Shop now</div>
+                        <div style={{ margin: "0.2rem",display:"flex",justifyContent:"center", alignItems:"center",width: "70%" }} ><p>Shop now</p></div>
                         <div style={{ width: "30%", backgroundColor: "white" }} ></div>
                     </div>
                 </div>
