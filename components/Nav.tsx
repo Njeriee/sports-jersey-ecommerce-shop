@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <section className={styles.navbarContainer}>
             <div style={{ width: "15%", height:"100%", backgroundColor: "#FADD18" }}></div>
-            <div style={{ width: "85%", display: "grid", gridTemplateRows: " 1fr 1fr;" }}>
+            <div style={{ width: "85%", display: "grid", gridTemplateRows: " 1fr 1fr" }}>
                 <div className={styles.searchBar}>
                     <div className={styles.dropDown} style={{width:"10%"}}>
                         <button>All Categories <i >i</i></button>
