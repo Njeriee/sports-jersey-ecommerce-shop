@@ -135,7 +135,7 @@
 
 @media screen and (max-width: 40rem) {
   .heroWrapper{
-    
+   height: 50vh; 
   }
 
   .heroText {

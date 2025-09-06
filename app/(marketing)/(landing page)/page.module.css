@@ -154,12 +154,10 @@
 @media screen and (max-width: 40rem) {
   .home {
     margin: 2rem 0rem;
+    /* overflow: hidden; */
   }
   .leguesSection {
     margin: 4 1rem;
-    /* margin-bottom: 4rem; */
-    width: 100%;
-
   }
 
   .leguesSection img {
@@ -170,12 +168,9 @@
   .leguesSection h2 {
     font-size: 1.4rem;
     margin: 0;
-    text-transform: uppercase;
   }
 
   .leguesSection p {
-    font-weight: bold;
-    text-align: left;
     font-size: 1rem;
     margin-top: 0px;
   }
@@ -250,7 +245,6 @@
   }
 
   .socialsTxt {
-    position: absolute;
     font-size: 0.6rem;
     margin: 1rem;
     padding: 0.2rem;
@@ -265,8 +259,4 @@
     margin: 1rem 0;
   }
 
-  .socialsTxt span {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
 }
