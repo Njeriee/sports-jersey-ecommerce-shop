@@ -34,7 +34,8 @@
 
 @media screen and (max-width: 40rem) {
   .productSection {
-    padding: 10rem 1rem;
+    padding: 0 1rem;
+    padding-top: 10rem;
   }
 
   .productHeadingAndButtons {
