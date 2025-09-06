@@ -18,7 +18,7 @@ export default function ProductCard({ product }: { product: Product }) {
     )
 
     return (
-        <Link href={'#'} className={styles.cardWrapper}>
+        <Link href={`/products/${product.id}`} className={styles.cardWrapper}>
 
                 
                    { hasDiscount ? (
