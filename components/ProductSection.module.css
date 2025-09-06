@@ -1,7 +1,5 @@
 .productSection {
   padding: 8rem 0;
-  display: grid;
-  grid-template-columns: auto;
 }
 
 .productHeadingAndButtons {
@@ -10,6 +8,7 @@
 
 .productHeadingAndButtons h2 {
   font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .productHeadingAndButtons button {
@@ -27,9 +26,40 @@
   width: 100%;
 }
 
-
 .productTrack {
   display: flex;
   gap: 2rem;
   /* transition: transform 0.5s ease; */
+}
+
+@media screen and (max-width: 40rem) {
+  .productSection {
+    padding: 10rem 1rem;
+  }
+
+  .productHeadingAndButtons {
+    margin: 1rem 0;
+    display: flex;
+  }
+
+  .productHeadingAndButtons h2 {
+    font-size: 1.4rem;
+    width: 60%;
+  }
+
+  .productHeadingAndButtons button {
+    padding: 0.5rem;
+
+  }
+
+  .productCarousel {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .productTrack {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
 }
