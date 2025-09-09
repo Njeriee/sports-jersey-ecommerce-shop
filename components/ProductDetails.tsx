@@ -96,16 +96,16 @@ export default function ProductDetails({ product }: { product: Product }) {
                             </div>
                         </div>
                         <div className={styles.formGroup}>
-                            <label htmlFor="">Name</label>
+                            <label htmlFor="name">Name</label>
                             <input type="text" placeholder="What is the name you would like to put on the shirt?" />
                         </div>
                         <div className={styles.formGroup}>
-                            <label htmlFor="">Number on Shirt</label>
+                            <label htmlFor="number">Number on Shirt</label>
                             <input type="text" placeholder="Enter a number between 0 and 99" />
                         </div>
                         <div className={styles.formGroup}>
-                            <label htmlFor="Size">Patch</label>
-                            <select id="size" name="size" defaultValue="">
+                            <label htmlFor="patch">Patch</label>
+                            <select id="patch" name="patch" defaultValue="">
                                 <option value="" disabled hidden>
                                     Select a patch
                                 </option>

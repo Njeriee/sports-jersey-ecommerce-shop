@@ -14,7 +14,11 @@ interface Product {
     image: string
 }
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+type PageProps = {
+  params: { id: string };
+};
+
+export default function ProductPage({ params }: PageProps) {
 
     const product: Product | undefined = products.find(p => p.id === params.id)
     if (!product) return notFound
