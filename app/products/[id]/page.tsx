@@ -2,6 +2,8 @@ import { notFound } from "next/navigation"
 import products from "@/lib/products.json"
 import styles from './ProductPage.module.css'
 import ProductDetails from "@/components/ProductDetails"
+import Navbar from "@/components/Nav"
+import Footer from "@/components/Footer"
 
 
 interface Product {
@@ -18,8 +20,13 @@ export default function ProductPage({ params }: { params: { id: string } }) {
     if (!product) return notFound
 
     return (
+        <>
+        <Navbar/>
         <section className={styles.wrapper}>
-            <ProductDetails product={product}/>
+            <ProductDetails product={product} />
         </section>
+        <Footer/>
+        </>
+        
     )
 }
