@@ -92,7 +92,7 @@ export default function ProductDetails({ product }: { product: Product }) {
                                     <option value="large">Large</option>
                                     <option value="XL"></option>
                                 </select>
-                                <button>View Size Chart</button>
+                                <button>Size Chart</button>
                             </div>
                         </div>
                         <div className={styles.formGroup}>

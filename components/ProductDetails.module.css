@@ -129,6 +129,9 @@
   display: flex;
   width: 100%;
   padding: 0.8rem;
+  background-color: #FADD18;
+  outline: none;
+  border: none;
 }
 
 @media screen and (max-width: 40rem) {
@@ -194,6 +197,7 @@
 
   .details {
     margin: 2rem 0;
+    font-size: 0.8rem;
   }
 
   .formGroup {
@@ -201,28 +205,29 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin: 2rem 0;
+    font-size: 0.8rem;
   }
 
   .size {
     width: 100%;
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    gap: 2rem;
+    grid-template-columns: 2fr fr;
+    gap: 1rem;
   }
 
   .formGroup label {
   }
 
   .formGroup select {
-    padding: 0.8rem;
+    padding: 0.6rem;
   }
 
   .formGroup input {
-    padding: 0.8rem;
+    padding: 0.6rem;
   }
 
   .formGroup button {
-    padding: 0.8rem;
+    padding: 0.6rem;
   }
 
   .quantity {
