@@ -15,8 +15,8 @@ interface Product {
 }
 
 type PageProps = {
-  params: { id: string };
-};
+  params: { id: string }
+}
 
 export default function ProductPage({ params }: PageProps) {
 
