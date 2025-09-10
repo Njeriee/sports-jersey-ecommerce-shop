@@ -15,13 +15,15 @@ import Footer from "@/components/Footer"
 // }
 
 type PageProps = {
-    params: { id: string }
+  params: {
+    id: string;
+  }
 }
 
 export default function ProductPage({ params }: PageProps) {
   const product = products.find((p) => p.id === params.id)
 
-    if (!product) return notFound
+    if (!product) return notFound()
 
     return (
         <>
