@@ -6,31 +6,37 @@ import Navbar from "@/components/Nav"
 import Footer from "@/components/Footer"
 
 
-interface Product {
-    id: string
-    name: string
-    price: number
-    oldPrice: number
-    image: string
-}
+// interface Product {
+//     id: string
+//     name: string
+//     price: number
+//     oldPrice: number
+//     image: string
+// }
 
 type PageProps = {
-  params: { id: string }
+    params: { id: string }
 }
 
 export default function ProductPage({ params }: PageProps) {
+  const product = products.find((p) => p.id === params.id)
 
-    const product: Product | undefined = products.find(p => p.id === params.id)
     if (!product) return notFound
 
     return (
         <>
-        <Navbar/>
-        <section className={styles.wrapper}>
-            <ProductDetails product={product} />
-        </section>
-        <Footer/>
+            <Navbar />
+            <section className={styles.wrapper}>
+                <ProductDetails product={product} />
+            </section>
+            <Footer />
         </>
-        
+
     )
 }
+
+// export function generateStaticParams() {
+//   return products.map((p) => ({
+//     id: p.id,
+//   }))
+// }
