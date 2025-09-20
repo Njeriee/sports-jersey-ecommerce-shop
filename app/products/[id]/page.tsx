@@ -14,14 +14,14 @@ import Footer from "@/components/Footer"
 //     image: string
 // }
 
-type PageProps = {
-  params: {
-    id: string;
-  }
-}
+type Params = Promise<{ id: string }>
 
-export default function ProductPage({ params }: PageProps) {
-  const product = products.find((p) => p.id === params.id)
+
+export default async function ProductPage( props: {
+    params: Params
+}) {
+    const params = await props.params
+    const product = products.find((p) => p.id === params.id)
 
     if (!product) return notFound()
 
